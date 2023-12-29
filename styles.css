@@ -1,0 +1,330 @@
+/* styles.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f0f8ff; /* Light Blue Background */
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+header {
+  /* Yellow Header */
+  background-color: #ffd700;
+  padding: 10px 0;
+}
+
+h1 {
+  color: #000080; /* Navy Blue Heading */
+  margin: 0;
+}
+
+.slider-container {
+  margin: 20px 0;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.policy-details {
+  margin: 20px 0;
+}
+
+.policy-details h2 {
+  color: #000080; /* Navy Blue Heading */
+}
+
+.policy-details p {
+  line-height: 1.6;
+}
+
+.contact-form {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  color: #000080; /* Navy Blue Heading */
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+label,
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #000080; /* Navy Blue Button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: transparent; /* Darker Navy Blue on Hover */
+}
+
+#map-contact {
+  margin-top: 20px;
+}
+
+#map {
+  height: 300px;
+  background-color: #ddd;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Adjust the values for the desired shadow effect */
+}
+.col-md-6 h3 {
+  color: #000080;
+  text-align: center;
+}
+
+#counter {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  width: 100%;
+}
+svg {
+  width: 70px; /* Default size for PC view */
+  height: 70px; /* Default size for PC view */
+}
+
+@media (max-width: 768px) {
+  svg {
+    width: 40px; /* Adjusted size for mobile view */
+    height: 40px; /* Adjusted size for mobile view */
+  }
+}
+
+/* added plus sign for counters */
+.count::after {
+  content: "+";
+  font-size: 45px;
+  margin-left: 1px;
+  text-align: center;
+}
+
+/* Remove the plus sign for this specific counter */
+.count[data-number="27"]::after {
+  content: "";
+}
+
+#counter .item {
+  background: #fff;
+  width: 200px;
+  padding: 35px 40px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.34);
+}
+
+#counter .item .count {
+  color: #e8b12d;
+  margin-bottom: 14px;
+  font-size: 40px;
+}
+
+#counter .item h3 {
+  color: #000000;
+  text-transform: capitalize;
+}
+
+/* Mobile View  */
+@media (max-width: 768px) {
+  #counter {
+    flex-direction: column;
+  }
+
+  #counter .item {
+    width: 100%;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  color: #333;
+  padding: 9px;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+}
+
+.dropdown-button:focus {
+  outline: none; /* Remove focus outline in addition to hover */
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+  outline: none;
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  margin-left: 5px;
+}
+
+/* phonedropdown */
+@media (max-width: 768px) {
+  .dropdown {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+.count-name {
+  color: #e8b12d;
+  font-size: 30px;
+  font-weight: bold;
+}
+.footer {
+  position: relative;
+  padding-right: 20px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Add a background color for better visibility */
+  text-align: right; /* Align content to the right */
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -45px;
+}
+
+.socialmedia a {
+  margin-left: 10px; /* Adjust margin between icons as needed */
+  font-size: 12px; /* Adjust font size as needed */
+  text-decoration: none;
+  color: white; /* Adjust color as needed */
+  display: flex;
+  align-items: center;
+}
+
+.socialmedia svg {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px;
+  margin-right: 5px; /* Adjust margin between icon and text as needed */
+}
+
+@media only screen and (min-width: 600px) {
+  /* Adjust styles for larger screens if needed */
+  .footer {
+    text-align: right; /* Align content to the right on larger screens */
+  }
+
+  .socialmedia {
+    flex-direction: row; /* Display icons side by side on larger screens */
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialmedia {
+    margin-top: 10px; /* Adjust the spacing as needed */
+  }
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* Adjust top margin as needed */
+}
+
+.logo {
+  max-width: 100px; /* Adjust maximum width for mobile view */
+  margin: 10px; /* Adjust margin between logos for mobile view */
+}
+
+@media (min-width: 768px) {
+  .logos {
+    flex-direction: row; /* Change back to row for desktop view */
+  }
+
+  .logo {
+    max-width: 300px; /* Adjust maximum width for desktop view */
+  }
+}
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-brand img {
+  max-height: 100px; /* Adjust the maximum height as needed for both mobile and desktop */
+  margin-top: 0px;
+}
