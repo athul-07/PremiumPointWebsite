@@ -16,9 +16,7 @@ body {
 header {
   /* Yellow Header */
   background-color: #ffd700;
-  padding: 10px 0;
-  width: auto;
-  overflow: hidden;
+  padding: 10px 100px;
 }
 
 h1 {
