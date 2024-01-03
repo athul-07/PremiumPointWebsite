@@ -18,11 +18,17 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
-    <!-- Navbar -->
+    
+    <div class="popup-banner" id="popupBanner">
+      <img src="images/2024.jpg" alt="New Year Banner" class="popup-banner-image">
+      <button class="close-button" onclick="closePopupBanner()">X</button>
+  </div>
+
+  <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -70,7 +76,7 @@
          <div class="logos">
           <img class="logo" src="images/LIC-Logo.png" alt="LIC"> <!--  LIC LOGO -->
           <img class="logo" src="images/lic hfl.png" alt="LIC HFL"> <!--  LIC HFL LOGO -->
-          <img class="logo" src="images/starhealth.png" alt="STAR HEALTH INSURANCE"> <!--  STAR HEALTH LOGO -->
+          <img class="logo" src="images/starhealth_white.png" alt="STAR HEALTH INSURANCE"> <!--  STAR HEALTH LOGO -->
           <!-- Add more logos as needed -->
       </div>
         <a href="#Contact" class="btn btn-primary">Get a Quote</a>
@@ -183,52 +189,41 @@
         <h2 class="text-center">Our Services</h2>
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">LIC</h5>
-                <p class="card-text">information</p>
+            <a href="lic.html" class="card-link">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="images/LIC-Logo.png" alt="Logo" class="servlogo">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">LIC HFL</h5>
-                <p class="card-text">information</p>
+            <a href="your_destination_url.html" class="card-link">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="images/lic hfl.png" alt="Logo" class="servlogohfl">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">STAR HEALTH INSURANCE</h5>
-                <p class="card-text">information</p>
+            <a href="your_destination_url.html" class="card-link">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="images/starhealth_white.png" alt="Logo" class="servlogostar">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Gallery Section
-    <section id="gallery" class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center">Gallery</h2>
-        <div class="row">
-          <div class="col-md-4">
-            Content for the first gallery item
-          </div>
-          <div class="col-md-4">
-            Content for the second gallery item
-          </div>
-          <div class="col-md-4">
-            Content for the third gallery item
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Map and Contact Section -->
 
     <div class="container">
       <div class="row">
@@ -308,6 +303,8 @@
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/new-year-popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
   </body>
 </html>

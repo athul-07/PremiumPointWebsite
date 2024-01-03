@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endownment Plans</title>
+    <link rel="stylesheet" href="styles/endownment.css" />
+  </head>
+  <body>
+    <h1>Endownment Plans</h1>
+
+    <div class="container">
+      <div
+        class="box"
+        onclick="openModal('images/Endownment Plans/Dhan Vriddhi.jpg', 'DHAN VRIDDHI')"
+      >
+        <img
+          src="images/Endownment Plans/Dhan Vriddhi.jpg"
+          alt="Insurance Plan 1"
+        />
+        <p>DHAN VRIDDHI</p>
+      </div>
+      <div
+        class="box"
+        onclick="openModal('images/Endownment Plans/Jeevan Labh_page-0001.jpg', 'JEEVAN LABH')"
+      >
+        <img
+          src="images/Endownment Plans/Jeevan Labh_page-0001.jpg"
+          alt="Insurance Plan 2"
+        />
+        <p>JEEVAN LABH</p>
+      </div>
+      <div
+        class="box"
+        onclick="openModal('images/Endownment Plans/jeevan lakshya_page-0001.jpg', 'JEEVAN LAKSHYA')"
+      >
+        <img
+          src="images/Endownment Plans/jeevan lakshya_page-0001.jpg"
+          alt="Insurance Plan 3"
+        />
+        <p>JEEVAN LAKSHYA</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image" />
+        <h2 id="modalHeading"></h2>
+      </div>
+    </div>
+
+    <script src="script/endownment.js"></script>
+  </body>
+</html>

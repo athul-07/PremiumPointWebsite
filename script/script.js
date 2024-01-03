@@ -55,3 +55,21 @@ arr.map(function (item) {
     counterup();
   }, 50);
 });
+
+// New Year Popup Script
+
+window.onload = function () {
+  // Display the New Year Popup after a delay (e.g., 3 seconds)
+  setTimeout(function () {
+    document.getElementById("popupBanner").classList.add("active");
+  }, 1000);
+};
+
+function closePopupBanner() {
+  // Close the New Year Popup with a delay to allow the transition effect
+  document.getElementById("popupBanner").classList.remove("active");
+
+  setTimeout(function () {
+    document.getElementById("popupBanner").style.display = "none";
+  }, 500); // Adjust the delay based on the transition duration in CSS
+}

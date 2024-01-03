@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whole Life Plans</title>
+    <link rel="stylesheet" href="styles/wholelife.css" />
+  </head>
+  <body>
+    <h1>Whole Life Plans</h1>
+
+    <div class="container">
+      <div
+        class="box"
+        onclick="openModal('images/Whole Life Plans/JEEVAN UMANG.jpg', 'JEEVAN UMANG')"
+      >
+        <img
+          src="images/Whole Life Plans/JEEVAN UMANG.jpg"
+          alt="Insurance Plan 1"
+        />
+        <p>JEEVAN UMANG</p>
+      </div>
+      <div
+        class="box"
+        onclick="openModal('images/Endownment Plans/Jeevan Labh_page-0001.jpg', 'JEEVAN LABH')"
+      >
+        <img
+          src="images/Endownment Plans/Jeevan Labh_page-0001.jpg"
+          alt="Insurance Plan 2"
+        />
+        <p>JEEVAN LABH</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image" />
+        <h2 id="modalHeading"></h2>
+      </div>
+    </div>
+
+    <script src="script/endownment.js"></script>
+  </body>
+</html>
