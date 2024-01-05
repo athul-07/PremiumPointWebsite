@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Back Plans</title>
+    <link rel="stylesheet" href="styles/endownment.css" />
+  </head>
+  <body>
+    <h1>Money Back Plans</h1>
+
+    <div class="container">
+      <div
+        class="box"
+        onclick="openPDF('pdf/Bima_Shree.pdf', 'images/Endownment Plans/Dhan Vriddhi.jpg', 'DHAN VRIDDHI')"
+      >
+        <img
+          src="images/Money Back Plans/bhimashree_page-0001.jpg"
+          alt="Insurance Plan 1"
+        />
+        <p>BIMA SHREE</p>
+      </div>
+      <div
+        class="box"
+        onclick="openPDF('pdf/New-Childrens-Money-Back.pdf', 'images/Endownment Plans/Dhan Vriddhi.jpg', 'DHAN VRIDDHI')"
+      >
+        <img
+          src="images/Money Back Plans/childrensmoeyback_page-0001.jpg"
+          alt="Insurance Plan 2"
+        />
+        <p>NEW CHILDRENS MONEY BACK</p>
+      </div>
+      <div
+        class="box"
+        onclick="openPDF('pdf/JeevanShiromani.pdf', 'images/Endownment Plans/Dhan Vriddhi.jpg', 'DHAN VRIDDHI')"
+      >
+        <img
+          src="images/Money Back Plans/jeevanshiromani_page-0001.jpg"
+          alt="Insurance Plan 3"
+        />
+        <p>JEEVAN SHIROMANI</p>
+      </div>
+      <div
+        class="box"
+        onclick="openPDF('pdf/JeevanTarun.pdf', 'images/Endownment Plans/Dhan Vriddhi.jpg', 'DHAN VRIDDHI')"
+      >
+        <img
+          src="images/Money Back Plans/jeevantarun_page-0001.jpg"
+          alt="Insurance Plan 3"
+        />
+        <p>JEEVAN TARUN</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image" />
+        <h2 id="modalHeading"></h2>
+      </div>
+    </div>
+
+    <script src="script/planscript.js"></script>
+  </body>
+</html>
