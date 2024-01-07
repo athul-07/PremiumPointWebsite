@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: blue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 350px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  position: relative;
+}
+
+.box img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-bottom: 2px solid #fff;
+}
+
+.box p {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.modal-content h2 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 80%;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Term Assurance Plans</title>
+    <link rel="stylesheet" href="styles/rider.css" />
+  </head>
+  <body>
+    <h1>RIDERS PLANS</h1>
+
+    <div class="container">
+      <div class="box" onclick="openPDF('pdf/AD-DB-Rider.pdf', 'AD-DB-Rider')">
+        <img src="images\LIC-Logo.jpg" alt="Insurance Plan 1" />
+        <p>LIC's Accidental Death and Disability Benefit Rider</p>
+      </div>
+
+      <div
+        class="box"
+        onclick="openPDF('pdf/Premium Waiver Benefit Rider.pdf','Premium Waiver Benefit Rider')"
+      >
+        <img src="images\LIC-Logo.jpg" alt="Insurance Plan 2" />
+        <p>LIC's Premium Waiver Benefit Rider</p>
+      </div>
+      <div
+        class="box"
+        onclick="openPDF('pdf/New Critical Illness Benefit Rider.pdf', 'New Critical Illness Benefit Rider')"
+      >
+        <img src="images\LIC-Logo.jpg" alt="Insurance Plan 2" />
+        <p>LIC’s New Critical Illness Benefit Rider</p>
+      </div>
+      <div
+        class="box"
+        onclick="openPDF('pdf/New Term Assurance Rider.pdf', 'LICs NEW TERM ASSURANCE RIDER')"
+      >
+        <img src="images\LIC-Logo.jpg" alt="Insurance Plan 2" />
+        <p>LIC's NEW TERM ASSURANCE RIDER</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image" />
+        <h2 id="modalHeading"></h2>
+      </div>
+    </div>
+
+    <script src="script/planscript.js"></script>
+  </body>
+</html>

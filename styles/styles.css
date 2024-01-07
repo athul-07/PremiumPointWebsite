@@ -465,7 +465,8 @@ svg {
 
 /* Adjust the width and height as needed */
 .whatsapp-icon {
-  width: 210px;
+  width: 250px;
   height: 90px;
   align-items: center;
+  justify-content: center;
 }

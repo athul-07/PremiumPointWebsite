@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Linked Plans</title>
+    <link rel="stylesheet" href="styles/endownment.css" />
+  </head>
+  <body>
+    <h1>UNIT LINKED PLANS</h1>
+
+    <div class="container">
+      <div
+        class="box"
+        onclick="openPDF('pdf/LICs NIVESH PLUS.pdf', 'LICs NIVESH PLUS')"
+      >
+        <img src="images/LIC-Logo.jpg" alt="Insurance Plan 1" />
+        <p>LIC's NIVESH PLUS</p>
+      </div>
+      <div class="box" onclick="openPDF('pdf/LICs SIIP.pdf', 'LICs SIIP')">
+        <img src="images/LIC-Logo.jpg" alt="Insurance Plan 2" />
+        <p>LIC's SIIP</p>
+      </div>
+      <div
+        class="box"
+        onclick="openPDF('pdf/LICs New Pension Plus.pdf', 'LICS NEW PENSION PLUS')"
+      >
+        <img src="images/LIC-Logo.jpg" alt="Insurance Plan 2" />
+        <p>LIC's NEW PENSION PLUS</p>
+      </div>
+      <div
+        class="box"
+        onclick="openPDF('pdf/LICs New Endowment Plus.pdf', 'LICs NEW ENDOWMENT PLUS')"
+      >
+        <img src="images/LIC-Logo.jpg" alt="Insurance Plan 3" />
+        <p>LIC's NEW ENDOWMENT PLUS</p>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image" />
+        <h2 id="modalHeading"></h2>
+      </div>
+    </div>
+
+    <script src="script/planscript.js"></script>
+  </body>
+</html>
