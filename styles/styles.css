@@ -94,20 +94,6 @@ button:hover {
   background-color: transparent; /* Darker Navy Blue on Hover */
 }
 
-#map-contact {
-  margin-top: 20px;
-}
-
-#map {
-  height: 300px;
-  background-color: #ddd;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Adjust the values for the desired shadow effect */
-}
-.col-md-6 h3 {
-  color: #000080;
-  text-align: center;
-}
-
 #counter {
   text-align: center;
   display: flex;
@@ -469,4 +455,31 @@ svg {
   height: 90px;
   align-items: center;
   justify-content: center;
+}
+
+/* new map */
+
+.newmap-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  width: 514px; /* Adjust the width as needed */
+  height: 476px;
+}
+.map {
+  height: 400px;
+}
+
+.newmap-box h3 {
+  text-align: center;
+  color: #000080;
+}
+
+@media (max-width: 767px) {
+  .newmap-box {
+    width: 90%; /* Adjust the width for smaller screens */
+    margin: 20px auto; /* Center the box on smaller screens */
+  }
 }
