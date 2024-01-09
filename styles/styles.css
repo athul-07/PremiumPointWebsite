@@ -13,85 +13,18 @@ body {
   padding: 0px;
 }
 
-header {
-  background: linear-gradient(
-    90deg,
-    rgba(251, 199, 7, 1) 35%,
-    rgba(34, 137, 230, 1) 64%
-  );
-  padding: 10px 0px;
-}
-
-h1 {
-  color: #000080; /* Navy Blue Heading */
-  margin: 0;
-}
-
-.slider-container {
-  margin: 20px 0;
-}
-
-.slider {
-  display: flex;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.slider img {
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.policy-details {
-  margin: 20px 0;
-}
-
-.policy-details h2 {
-  color: #000080; /* Navy Blue Heading */
-}
-
-.policy-details p {
-  line-height: 1.6;
-}
-
-.contact-form {
-  margin: 20px 0;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-  color: #000080; /* Navy Blue Heading */
+.container h1 {
   text-align: center;
+  color: navy;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-}
-
-label,
-input,
-textarea {
-  margin-bottom: 10px;
-}
-
-button {
-  padding: 10px;
-  background-color: #000080; /* Navy Blue Button */
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: transparent; /* Darker Navy Blue on Hover */
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  width: 155px;
+  height: 36px;
 }
 
 #counter {
@@ -160,73 +93,6 @@ svg {
   }
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-button {
-  background: none;
-  border: none;
-  color: #333;
-  padding: 9px;
-  cursor: pointer;
-  font-size: 15px;
-  outline: none;
-}
-
-.dropdown-button:focus {
-  outline: none; /* Remove focus outline in addition to hover */
-}
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-}
-
-.dropdown-content a:hover {
-  background-color: transparent;
-  outline: none;
-}
-
-.dropdown-arrow {
-  display: inline-block;
-  border: solid #333;
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  transform: rotate(45deg);
-  margin-left: 5px;
-}
-
-/* phonedropdown */
-@media (max-width: 768px) {
-  .dropdown {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .dropdown-content {
-    position: static;
-    display: none;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
-
 .count-name {
   color: #e8b12d;
   font-size: 30px;
@@ -281,7 +147,7 @@ svg {
   }
 
   .socialmedia {
-    margin-top: 10px; /* Adjust the spacing as needed */
+    margin-top: 10px;
   }
 }
 
@@ -289,21 +155,21 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px; /* Adjust top margin as needed */
+  margin-top: 10px;
 }
 
 .logo {
-  max-width: 100px; /* Adjust maximum width for mobile view */
-  margin: 10px; /* Adjust margin between logos for mobile view */
+  max-width: 100px;
+  margin: 10px;
 }
 
 @media (min-width: 768px) {
   .logos {
-    flex-direction: row; /* Change back to row for desktop view */
+    flex-direction: row;
   }
 
   .logo {
-    max-width: 300px; /* Adjust maximum width for desktop view */
+    max-width: 300px;
   }
 }
 .navbar-brand {
@@ -314,12 +180,12 @@ svg {
 }
 
 .navbar-brand img {
-  max-height: 100px; /* Adjust the maximum height as needed for both mobile and desktop */
+  max-height: 100px;
   margin-top: 0px;
 }
 
 .card {
-  height: 150px; /* Set a fixed height for the card */
+  height: 150px;
 }
 
 .card-body {
@@ -328,16 +194,8 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  transition: background-color 0.3s ease;
 }
-
-.card:hover .card-body {
-  background-color: #fbc707; /* Hover color for servlogo and servlogohfl */
-}
-
-/* .card:hover .servlogostar {
-  background-color: blue; 
-} */
 
 .servlogo,
 .servlogohfl,
@@ -404,12 +262,18 @@ svg {
   color: #000000;
 }
 
+.contact-box a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .contact-info h2 {
   text-align: center;
 }
 
 .contact-box h3 {
   color: #000000;
+  text-align: center;
 }
 
 .contact-box p {
